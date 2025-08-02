@@ -1,0 +1,51 @@
+{
+   "display": {
+      "icon": {
+         "id": "sentry_armor_trim_smithing_template",
+         "components": {
+            "enchantments": {
+               "silk_touch": 1
+            }
+         }
+      },
+      "title": "수집가 1",
+      "description": "로비의 모든 증표를 모은 자.",
+      "announce_to_chat": true,
+      "frame": "challenge",
+      "hidden": true,
+      "show_toast": true
+   },
+   "parent": "comma6760:lobby/take_token",
+   "criteria": {
+      "collect_token_of_candle": {
+         "trigger": "thrown_item_picked_up_by_player",
+         "conditions": {
+            "item": {
+               "items": "gray_candle",
+               "components": {
+                  "custom_data": "{text:\"token_of_candle\"}"
+               }
+            }
+         }
+      },
+      "collect_token_of_tuff": {
+         "trigger": "thrown_item_picked_up_by_player",
+         "conditions": {
+            "item": {
+               "items": "chiseled_tuff_bricks",
+               "components": {
+                  "custom_data": "{text:\"token_of_tuff\"}"
+               }
+            }
+         }
+      }
+   },
+   "requirements": [
+      [
+         "collect_token_of_candle"
+      ],
+      [
+         "collect_token_of_tuff"
+      ]
+   ]
+}

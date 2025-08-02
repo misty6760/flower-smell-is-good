@@ -1,0 +1,2 @@
+execute if score @p LobbyLanternParticle matches 40 run particle minecraft:flame -13.50 -55.50 -21.50 .2 .2 .2 .01 10
+execute if score @p LobbyLanternParticle matches 41 run scoreboard players reset @p LobbyLanternParticle

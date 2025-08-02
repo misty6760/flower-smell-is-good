@@ -1,0 +1,51 @@
+{
+   "display": {
+      "icon": {
+         "id": "sunflower"
+      },
+      "title": "증표 찾기",
+      "description": "아직 남았어...",
+      "announce_to_chat": true,
+      "frame": "goal",
+      "hidden": false,
+      "show_toast": true
+   },
+   "parent": "comma6760:lobby/enter",
+   "criteria": {
+      "collect_token_of_candle": {
+         "trigger": "inventory_changed",
+         "conditions": {
+            "items": [
+               {
+                  "items": "gray_candle",
+                  "components": {
+                     "custom_data": "{text:\"token_of_candle\"}"
+                  }
+               }
+            ]
+         }
+      },
+      "collect_token_of_tuff_bricks": {
+         "trigger": "inventory_changed",
+         "conditions": {
+            "items": [
+               {
+                  "items": "chiseled_tuff_bricks",
+                  "components": {
+                     "custom_data": "{text:\"token_of_tuff\"}"
+                  }
+               }
+            ]
+         }
+      }
+   },
+   "requirements": [
+      [
+         "collect_token_of_candle",
+         "collect_token_of_tuff_bricks"
+      ]
+   ],
+   "rewards": {
+      "function": "comma6760:lobby/collect_token/save_token_count_lobby"
+   }
+}

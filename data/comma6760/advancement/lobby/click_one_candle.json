@@ -1,0 +1,60 @@
+{
+   "display": {
+      "icon": {
+         "id": "gray_candle"
+      },
+      "title": "촛불 찾기",
+      "description": "왜 누르는 거죠?",
+      "announce_to_chat": true,
+      "frame": "goal",
+      "hidden": false,
+      "show_toast": true
+   },
+   "parent": "comma6760:lobby/enter",
+   "criteria": {
+      "click_first_candle": {
+         "trigger": "player_hurt_entity",
+         "conditions": {
+            "entity": {
+               "type": "minecraft:interaction",
+               "nbt": "{Tags:[\"FirstCandle\"]}"
+            }
+         }
+      },
+      "click_second_candle": {
+         "trigger": "player_hurt_entity",
+         "conditions": {
+            "entity": {
+               "type": "minecraft:interaction",
+               "nbt": "{Tags:[\"SecondCandle\"]}"
+            }
+         }
+      },
+      "click_thrid_candle": {
+         "trigger": "player_hurt_entity",
+         "conditions": {
+            "entity": {
+               "type": "minecraft:interaction",
+               "nbt": "{Tags:[\"ThirdCandle\"]}"
+            }
+         }
+      },
+      "click_forth_candle": {
+         "trigger": "player_hurt_entity",
+         "conditions": {
+            "entity": {
+               "type": "interaction",
+               "nbt": "{Tags:[\"ForthCandle\"]}"
+            }
+         }
+      }
+   },
+   "requirements": [
+      [
+         "click_first_candle",
+         "click_second_candle",
+         "click_thrid_candle",
+         "click_forth_candle"
+      ]
+   ]
+}

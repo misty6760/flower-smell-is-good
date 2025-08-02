@@ -1,0 +1,1 @@
+damage @p 0.01 in_fire

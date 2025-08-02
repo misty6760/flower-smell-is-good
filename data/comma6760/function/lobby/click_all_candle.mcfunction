@@ -1,0 +1,1 @@
+give @p gray_candle[item_name={text:"촛불의 증표",color:"light_purple"},lore=[{text:"촛불을 다 찾은 사람에게 주는 증표",color:"dark_purple",italic:false}],enchantments={silk_touch:1},tooltip_display={hidden_components:["enchantments"]},custom_data={text:"token_of_candle"}]

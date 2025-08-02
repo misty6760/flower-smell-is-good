@@ -1,0 +1,19 @@
+{
+   "display": {
+      "icon": {
+         "id": "minecraft:oak_door"
+      },
+      "title": "입장",
+      "description": "안녕하세요?",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true,
+      "background": "minecraft:block/polished_tuff"
+   },
+   "criteria": {
+      "greating": {
+         "trigger": "minecraft:impossible"
+      }
+   }
+}

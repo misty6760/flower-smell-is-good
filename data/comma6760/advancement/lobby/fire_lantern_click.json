@@ -1,0 +1,28 @@
+{
+   "display": {
+      "icon": {
+         "id": "minecraft:lantern"
+      },
+      "title": "화상입기",
+      "description": "앗 뜨거워!",
+      "announce_to_chat": true,
+      "frame": "goal",
+      "hidden": false,
+      "show_toast": true
+   },
+   "parent": "comma6760:lobby/enter",
+   "criteria": {
+      "click_lantern": {
+         "trigger": "player_hurt_entity",
+         "conditions": {
+            "entity": {
+               "type": "minecraft:interaction",
+               "nbt": "{Tags:[\"FireLanternInteraction\"]}"
+            }
+         }
+      }
+   },
+   "rewards": {
+      "function": "comma6760:lobby/lobby_lantern_click/click_damage"
+   }
+}

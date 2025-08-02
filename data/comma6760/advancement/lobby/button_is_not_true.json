@@ -1,0 +1,19 @@
+{
+   "display": {
+      "icon": {
+         "id": "minecraft:stone_button"
+      },
+      "title": "그거 아닌데",
+      "description": "시작 버튼을 누르세요",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+   },
+   "parent": "comma6760:lobby/enter",
+   "criteria": {
+      "click_start_button": {
+         "trigger": "minecraft:impossible"
+      }
+   }
+}

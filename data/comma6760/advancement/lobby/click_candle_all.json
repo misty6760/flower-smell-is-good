@@ -1,0 +1,66 @@
+{
+   "display": {
+      "icon": {
+         "id": "minecraft:gray_candle",
+         "components": {
+            "enchantments": {
+               "fortune": 1
+            }
+         }
+      },
+      "title": "촛불 \"다\" 찾기",
+      "description": "왜 다 누르는 거죠?",
+      "announce_to_chat": true,
+      "frame": "challenge",
+      "hidden": true,
+      "show_toast": true
+   },
+   "parent": "comma6760:lobby/click_one_candle",
+   "criteria": {
+      "click_first_candle": {
+         "trigger": "player_hurt_entity",
+         "conditions": {
+            "entity": {
+               "type": "interaction",
+               "nbt": "{Tags:[\"FirstCandle\"]}"
+            }
+         }
+      },
+      "click_second_candle": {
+         "trigger": "player_hurt_entity",
+         "conditions": {
+            "entity": {
+               "type": "interaction",
+               "nbt": "{Tags:[\"SecondCandle\"]}"
+            }
+         }
+      },
+      "click_third_candle": {
+         "trigger": "player_hurt_entity",
+         "conditions": {
+            "entity": {
+               "type": "interaction",
+               "nbt": "{Tags:[\"ThirdCandle\"]}"
+            }
+         }
+      },
+      "click_forth_candle": {
+         "trigger": "player_hurt_entity",
+         "conditions": {
+            "entity": {
+               "type": "interaction",
+               "nbt": "{Tags:[\"ForthCandle\"]}"
+            }
+         }
+      }
+   },
+   "requirements": [
+      ["click_first_candle"],
+      ["click_second_candle"],
+      ["click_third_candle"],
+      ["click_forth_candle"]
+   ],
+   "rewards": {
+      "function": "comma6760:lobby/click_all_candle"
+   }
+}
