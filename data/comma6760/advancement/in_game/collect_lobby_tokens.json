@@ -18,34 +18,48 @@
    "parent": "comma6760:lobby/take_token",
    "criteria": {
       "collect_token_of_candle": {
-         "trigger": "thrown_item_picked_up_by_player",
+         "trigger": "inventory_changed",
          "conditions": {
-            "item": {
-               "items": "gray_candle",
-               "components": {
-                  "custom_data": "{text:\"token_of_candle\"}"
+            "items": [
+               {
+                  "items": "gray_candle",
+                  "components": {
+                     "custom_data": "{text:\"token_of_candle\"}"
+                  }
                }
-            }
+            ]
          }
       },
       "collect_token_of_tuff": {
-         "trigger": "thrown_item_picked_up_by_player",
+         "trigger": "inventory_changed",
          "conditions": {
-            "item": {
-               "items": "chiseled_tuff_bricks",
-               "components": {
-                  "custom_data": "{text:\"token_of_tuff\"}"
+            "items": [
+               {
+                  "items": "chiseled_tuff_bricks",
+                  "components": {
+                     "custom_data": "{text:\"token_of_tuff\"}"
+                  }
                }
-            }
+            ]
+         }
+      },
+      "collect_token_of_creator": {
+         "trigger": "inventory_changed",
+         "conditions": {
+            "items": [
+               {
+                  "items": "player_head",
+                  "components": {
+                     "custom_data": "{text:\"token_of_creator\"}"
+                  }
+               }
+            ]
          }
       }
    },
    "requirements": [
-      [
-         "collect_token_of_candle"
-      ],
-      [
-         "collect_token_of_tuff"
-      ]
+      ["collect_token_of_candle"],
+      ["collect_token_of_tuff"],
+      ["collect_token_of_creator"]
    ]
 }

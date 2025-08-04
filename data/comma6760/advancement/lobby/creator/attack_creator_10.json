@@ -1,0 +1,28 @@
+{
+   "display": {
+      "icon": {
+         "id": "player_head",
+         "components": {
+            "profile": "comma6760",
+            "enchantments": {
+               "silk_touch": 1
+            }
+         }
+      },
+      "title": "전치 10주",
+      "description": "10번이나 때리다니, 너무하네요!",
+      "announce_to_chat": true,
+      "frame": "challenge",
+      "hidden": true,
+      "show_toast": true
+   },
+   "parent": "comma6760:lobby/creator/attack_all_creator",
+   "criteria": {
+      "attack_creator_10": {
+         "trigger": "impossible"
+      }
+   },
+   "rewards": {
+      "function": "comma6760:lobby/attack_creator_10"
+   }
+}

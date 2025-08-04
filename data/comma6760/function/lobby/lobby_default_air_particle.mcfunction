@@ -1,0 +1,2 @@
+execute if score @p LobbyAirParticle matches 80 run particle minecraft:trial_spawner_detection_ominous -14.50 -52.50 -24.50 4 4 4 0 100 force
+execute if score @p LobbyAirParticle matches 81 run scoreboard players reset @p LobbyAirParticle

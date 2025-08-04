@@ -40,10 +40,7 @@
       }
    },
    "requirements": [
-      [
-         "collect_token_of_candle",
-         "collect_token_of_tuff_bricks"
-      ]
+      ["collect_token_of_candle", "collect_token_of_tuff_bricks"]
    ],
    "rewards": {
       "function": "comma6760:lobby/collect_token/save_token_count_lobby"

@@ -1,0 +1,53 @@
+{
+   "display": {
+      "icon": {
+         "id": "player_head",
+         "components": {
+            "profile": {
+               "name": "comma6760"
+            }
+         }
+      },
+      "title": "불똥 튀기",
+      "description": "왜 나까지 때리는데요??",
+      "announce_to_chat": true,
+      "frame": "goal",
+      "hidden": false,
+      "show_toast": true
+   },
+   "parent": "comma6760:lobby/creator/attack_creator",
+   "criteria": {
+      "attack_map_creator": {
+         "trigger": "player_hurt_entity",
+         "conditions": {
+            "entity": {
+               "type": "interaction",
+               "nbt": "{Tags:[\"MapCreator\"]}"
+            }
+         }
+      },
+      "attack_datapack_creator": {
+         "trigger": "player_hurt_entity",
+         "conditions": {
+            "entity": {
+               "type": "interaction",
+               "nbt": "{Tags:[\"DatapackCreator\"]}"
+            }
+         }
+      },
+      "attack_command_creator": {
+         "trigger": "player_hurt_entity",
+         "conditions": {
+            "entity": {
+               "type": "interaction",
+               "nbt": "{Tags:[\"CommandCreator\"]}"
+            }
+         }
+      }
+   },
+   "requirements": [
+      ["attack_command_creator"],
+      ["attack_datapack_creator"],
+      ["attack_map_creator"]
+   ]
+}
