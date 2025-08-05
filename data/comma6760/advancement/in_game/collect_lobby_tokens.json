@@ -55,11 +55,25 @@
                }
             ]
          }
+      },
+      "collect_token_of_cod": {
+         "trigger": "inventory_changed",
+         "conditions": {
+            "items": [
+               {
+                  "items": "cod",
+                  "components": {
+                     "custom_data": "{text:\"token_of_cod\"}"
+                  }
+               }
+            ]
+         }
       }
    },
    "requirements": [
       ["collect_token_of_candle"],
       ["collect_token_of_tuff"],
-      ["collect_token_of_creator"]
+      ["collect_token_of_creator"],
+      ["collect_token_of_cod"]
    ]
 }

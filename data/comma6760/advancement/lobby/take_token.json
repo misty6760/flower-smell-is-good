@@ -25,7 +25,7 @@
             ]
          }
       },
-      "collect_token_of_tuff_bricks": {
+      "collect_token_of_tuff": {
          "trigger": "inventory_changed",
          "conditions": {
             "items": [
@@ -37,12 +37,40 @@
                }
             ]
          }
+      },
+      "collect_token_of_creator": {
+         "trigger": "inventory_changed",
+         "conditions": {
+            "items": [
+               {
+                  "items": "player_head",
+                  "components": {
+                     "custom_data": "{text:\"token_of_creator\"}"
+                  }
+               }
+            ]
+         }
+      },
+      "collect_token_of_cod": {
+         "trigger": "inventory_changed",
+         "conditions": {
+            "items": [
+               {
+                  "items": "cod",
+                  "components": {
+                     "custom_data": "{text:\"token_of_cod\"}"
+                  }
+               }
+            ]
+         }
       }
    },
    "requirements": [
-      ["collect_token_of_candle", "collect_token_of_tuff_bricks"]
-   ],
-   "rewards": {
-      "function": "comma6760:lobby/collect_token/save_token_count_lobby"
-   }
+      [
+         "collect_token_of_candle",
+         "collect_token_of_tuff",
+         "collect_token_of_creator",
+         "collect_token_of_cod"
+      ]
+   ]
 }

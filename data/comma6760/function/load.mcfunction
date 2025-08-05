@@ -8,6 +8,8 @@ scoreboard objectives add LobbyCandleClick dummy
 scoreboard players set @p LobbyCandleClick 0
 scoreboard objectives add LobbyTokenCount dummy
 scoreboard players set @p LobbyTokenCount 0
+scoreboard objectives add LobbyBookCount dummy
+scoreboard players set @p LobbyBookCount 0
 scoreboard objectives add AllTokenCount dummy
 scoreboard objectives add MapCreatorHitCount dummy
 scoreboard players set @p MapCreatorHitCount 0
@@ -15,5 +17,3 @@ scoreboard objectives add DatapackCreatorHitCount dummy
 scoreboard players set @p DatapackCreatorHitCount 0
 scoreboard objectives add CommandCreatorHitCount dummy
 scoreboard players set @p CommandCreatorHitCount 0
-scoreboard objectives add GameExplanTick dummy
-scoreboard players set @p GameExplanTick 0

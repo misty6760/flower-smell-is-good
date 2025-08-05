@@ -1,0 +1,1 @@
+give @p cod[item_name=[{text:"간",color:"red"},{text:"고",color:"gold"},{text:"등",color:"yellow"},{text:"어",color:"green"},{text:"의",color:"aqua"},{text:" "},{text:"증",color:"blue"},{text:"표",color:"light_purple"}],lore=[{text:"간고등어에게 주는 증표",color:"dark_purple"}],enchantments={silk_touch:1},tooltip_display={hidden_components:["enchantments"]},custom_data={text:"token_of_cod"}]

@@ -1,1 +1,0 @@
-scoreboard players add @p LobbyTokenCount 1
